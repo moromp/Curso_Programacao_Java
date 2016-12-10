@@ -10,19 +10,24 @@ public class Conta {
 		return this.valor;
 	}
 	
-	public double sacar(double valor){
+	public boolean sacar(double valor){
 		
-		if(valor > this.valor){
-			return 0;
+		if((valor > this.valor) || (valor<0)){
+			return false;
 		}else{
 			this.valor = this.valor - valor;
-			return this.valor;
+			return true;
 		}
 		
 	}
 	
-	public double depositar(double valor){
-		
-		return this.valor = this.valor + valor;
+	public boolean depositar(double valor){
+		if(valor > 0){
+			this.valor = this.valor + valor;
+			return true;
+		}else{
+			return false;
+		}
+			
 	}
 }

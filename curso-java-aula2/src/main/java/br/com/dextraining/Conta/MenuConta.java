@@ -3,7 +3,7 @@ package br.com.dextraining.Conta;
 import java.util.Scanner;
 
 public class MenuConta {
-	
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Conta conta = new Conta();
@@ -16,7 +16,7 @@ public class MenuConta {
 				System.out.println("Ler valor do saque");
 				saque = scanner.nextDouble();
 				
-				if(conta.sacar(saque) == 0){
+				if(conta.sacar(saque) == false){
 					System.out.println("Saldo insuficiente");
 				}else{
 					System.out.println("Seu saldo é: "+ conta.obterSaldo());
@@ -26,9 +26,11 @@ public class MenuConta {
 				System.out.println("Ler valor do deposito");
 				deposito = scanner.nextDouble();
 				
-				conta.depositar(deposito);
-				
-				System.out.println("Seu saldo é: "+ conta.obterSaldo());
+				if(conta.depositar(deposito) == false){
+					System.out.println("Valor informado é invalido");
+				}else{
+					System.out.println("Seu saldo é: "+ conta.obterSaldo());
+				}
 				
 			}else if(opcao == 3){
 				System.out.println("Seu saldo é: "+ conta.obterSaldo());
@@ -42,9 +44,9 @@ public class MenuConta {
 		scanner.close();
 	}
 
-	public static int mostrarMenu(Scanner scanner){
+	public static int mostrarMenu(Scanner scanner) {
 		System.out.println("1.Sacar");
-	    System.out.println("2.Depositar");
+		System.out.println("2.Depositar");
 		System.out.println("3.Ver saldo");
 		System.out.println("4.Sair");
 		return scanner.nextInt();

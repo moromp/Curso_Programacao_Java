@@ -24,6 +24,7 @@ public class CalcularNotas {
 			System.out.println("Digite o nome do Aluno");
 			aluno[i].nome = scanner.nextLine();
 			
+			
 			for(int j=0;j<3;j++){
 				System.out.println("Digite a nota do Aluno: " + aluno[i].nome);
 				aluno[i].notas[j] = scanner.nextDouble();

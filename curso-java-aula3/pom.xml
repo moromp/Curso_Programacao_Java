@@ -3,4 +3,13 @@
   <groupId>br.com.dextraining</groupId>
   <artifactId>br.com.dextraining</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+		<!-- Colocando a dependencia do JUNIT no projeto -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+  </dependencies>
 </project>

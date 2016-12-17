@@ -19,4 +19,27 @@ public class Aluno {
 		
 		return soma;
 	}
+	
+	//comando para retornar variaveis private
+	public String getNome(){
+		return nome;
+	}
+	
+	//comando para setar o valor na variaveis
+	public void setNome(String nome){
+		this.nome = nome;
+	}
+	
+	//comando para retornar variaveis private
+	public double[] getNotas(){
+		return notas;
+	}
+	
+	//comando para setar o valor na variaveis
+	public void setNotas(double[] notas){
+		if(notas.length != 3){
+			System.out.println("Numero de notas errado!");
+		}
+		this.notas = notas;
+	}
 }

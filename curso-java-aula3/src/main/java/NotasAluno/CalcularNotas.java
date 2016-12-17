@@ -33,7 +33,7 @@ public class CalcularNotas {
 		}
 		
 		//imprimir notas e media
-		for(int i=0;i<qtd;i++){
+		/*for(int i=0;i<qtd;i++){
 			soma = 0;
 			System.out.print("\n"+aluno[i].nome + " ");
 			for(int j=0;j<3;j++){
@@ -41,8 +41,17 @@ public class CalcularNotas {
 				System.out.print(aluno[i].notas[j] + " ");
 			}
 			System.out.print(soma/3);
-		}
+		}*/
 		
+		//mesmo processo do anterior mas mais simples e mais limpo e com os for
+		for(Aluno impressaoalunos: aluno)
+		{
+			System.out.print("\n"+impressaoalunos.nome + " ");
+			for(double nota : impressaoalunos.notas){
+				System.out.print(nota + " ");
+			}
+			System.out.print(impressaoalunos.getMedia());
+		}
 		
 		scanner.close();
 	}

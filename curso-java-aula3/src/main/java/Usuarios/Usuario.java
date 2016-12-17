@@ -26,9 +26,10 @@ public class Usuario {
 	}
 	
 	public void setSenha(String senha) {
-		if(ValidadorSenha.validar(senha)){
-			this.senha = senha;
+		if(!ValidadorSenha.validar(senha)){
+			throw new IllegalArgumentException("Senha Invalida");
 		}
+		this.senha = senha;
 	}
 
 }

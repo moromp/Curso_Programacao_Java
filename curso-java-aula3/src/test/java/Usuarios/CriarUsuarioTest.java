@@ -17,7 +17,7 @@ public class CriarUsuarioTest {
 		Assert.assertEquals(senhaValida,usuario.getSenha());
 	}
 	
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void testarComSenhaInvalidaFaltandoLetra(){
 		String senhaValida = "123456789a";
 		String senhaInvalida = "1215415412145";
@@ -31,7 +31,7 @@ public class CriarUsuarioTest {
 		Assert.assertEquals(senhaValida,usuario.getSenha());
 	}
 	
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void testarComSenhaInvalidaSemNumero(){
 		String senhaValida = "123456789a";
 		String senhaInvalida = "dgdfsd";
@@ -45,7 +45,7 @@ public class CriarUsuarioTest {
 		Assert.assertEquals(senhaValida,usuario.getSenha());
 	}
 	
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void testarComSenhaInvalidaMenor(){
 		String senhaValida = "123456789a";
 		String senhaInvalida = "dgd1";

@@ -10,11 +10,10 @@ public class ArmazenarArray {
 		int valores[] = new int[3];
 		int soma = 0;
 		
-		System.out.println("Digite os 3 valores:");
-		valores[0] = scanner.nextInt();
-		valores[1] = scanner.nextInt();
-		valores[2] = scanner.nextInt();
-		
+		for(int i=0;i<valores.length;i++){
+			System.out.println("Digite os " + i + "valores:");
+			valores[i] = scanner.nextInt();
+		}
 		
 		for(int i=0;i<valores.length;i++){
 			soma = soma + valores[i];

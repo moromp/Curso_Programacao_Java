@@ -38,7 +38,7 @@ public class MenuInicial {
 				System.out.println("Digite o Titulo do Livro: ");
 				xlivro.setTitulo(scanner.nextLine());
 				
-				//System.out.println("Digite a Data da PublicaÃ§Ã£o: ");
+				//System.out.println("Digite a Data da Publicação: ");
 				//xlivro.setData(scanner.nextLine());
 				
 				if(biblioteca.AdicionarLivro(xlivro) == false){

@@ -1,13 +1,13 @@
 package equipamentos;
 
-public class Impressora extends Equipamento{
+public class Impressora extends Eletronico{
 
 	public Impressora(double preco, String fabricante) {
 		super(preco, fabricante);
 	}
 	
 	//method de substituicao
-	public double calcularPrecoFinal(){
+	/*public double calcularPrecoFinal(){
 		
 		double porcentagem = 5;
 		double novopreco = super.calcularPrecoFinal();
@@ -16,5 +16,5 @@ public class Impressora extends Equipamento{
 		novopreco = novopreco + (novopreco*porcentagem/100);
 		
 		return novopreco;
-	}
+	}*/
 }

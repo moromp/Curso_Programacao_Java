@@ -11,15 +11,23 @@ public class testarEquipametos {
 	public void TestarImpressora(){
 		double preco = 200;
 		Impressora impressora = new Impressora(preco,"HP");
-		Assert.assertEquals(Double.valueOf(210),Double.valueOf(impressora.calcularPrecoFinal()));
+		Assert.assertEquals(Double.valueOf(220),Double.valueOf(impressora.calcularPrecoFinal()));
 		//fiz o calcularPrecoFinal com substituição, esta na classe Impressora
 	}
+	
+	//@Test
+	/*public void TestarTelevisao(){
+		double preco = 100;
+		Televisao televisao  = new Televisao(preco,"Samsung",10);
+		Assert.assertEquals(Double.valueOf(102),Double.valueOf(televisao.calcularPrecoFinal(2)));
+		//fiz o calcularPrecoFinal com sobrecarga, esta na classe Equipamento 
+	}*/
 	
 	@Test
 	public void TestarTelevisao(){
 		double preco = 100;
 		Televisao televisao  = new Televisao(preco,"Samsung",10);
-		Assert.assertEquals(Double.valueOf(102),Double.valueOf(televisao.calcularPrecoFinal(2)));
+		Assert.assertEquals(Double.valueOf(110),Double.valueOf(televisao.calcularPrecoFinal()));
 		//fiz o calcularPrecoFinal com sobrecarga, esta na classe Equipamento 
 	}
 	

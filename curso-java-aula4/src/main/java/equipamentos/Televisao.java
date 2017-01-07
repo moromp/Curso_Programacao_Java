@@ -1,6 +1,6 @@
 package equipamentos;
 
-public class Televisao extends Equipamento{
+public class Televisao extends Eletronico{
 	
 	private int polegadas;
 

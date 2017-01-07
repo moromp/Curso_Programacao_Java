@@ -6,11 +6,12 @@ public class Impressora extends Equipamento{
 		super(preco, fabricante);
 	}
 	
-	//metodo de substituicao da classe pai
+	//method de substituicao
 	public double calcularPrecoFinal(){
 		
 		double porcentagem = 5;
 		double novopreco = super.calcularPrecoFinal();
+		//double novopreco = super.getPreco(); // vai retornar a mesma coisa da consulta anterior
 		
 		novopreco = novopreco + (novopreco*porcentagem/100);
 		

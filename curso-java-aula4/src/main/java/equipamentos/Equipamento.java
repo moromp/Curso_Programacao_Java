@@ -31,7 +31,7 @@ public class Equipamento {
 		return this.preco;
 	}
 	
-	//classe de sobrecarga de classe
+	//method de sobrecarga 
 	public double calcularPrecoFinal(double porcentagem){
 		double novopreco = this.calcularPrecoFinal();
 		novopreco = novopreco + (novopreco * porcentagem/100);

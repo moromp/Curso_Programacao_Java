@@ -6,7 +6,7 @@ public class Moto extends Veiculo implements PagaPedagio{
 		super(2);
 	}
 	
-	public int QuantidadeEixos() {
+	public int getQtdeixos() {
 		return super.getQtdeixos();
 	}
 }

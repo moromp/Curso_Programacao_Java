@@ -18,6 +18,6 @@ public class CalculadorPedagio {
 	}
 
 	public void calcular(PagaPedagio objeto){
-		System.out.println(objeto.QuantidadeEixos() * this.valor);
+		System.out.println(objeto.getQtdeixos() * this.valor);
 	}
 }

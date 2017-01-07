@@ -6,7 +6,7 @@ public class Caminhao extends Veiculo implements PagaPedagio{
 		super(6);
 	}
 	
-	public int QuantidadeEixos() {
+	public int getQtdeixos() {
 		return super.getQtdeixos();
 	}
 }

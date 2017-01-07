@@ -12,6 +12,7 @@ public class testarEquipametos {
 		double preco = 200;
 		Impressora impressora = new Impressora(preco,"HP");
 		Assert.assertEquals(Double.valueOf(preco),Double.valueOf(impressora.calcularPrecoFinal()));
+		//fiz o calcularPrecoFinal com substituição, esta na classe Impressora
 	}
 	
 	@Test
@@ -19,6 +20,7 @@ public class testarEquipametos {
 		double preco = 200;
 		Televisao televisao  = new Televisao(preco,"Samsung",10);
 		Assert.assertEquals(Double.valueOf(preco),Double.valueOf(televisao.calcularPrecoFinal(2)));
+		//fiz o calcularPrecoFinal com sobrecarga, esta na classe Equipamento 
 	}
 	
 	@Test

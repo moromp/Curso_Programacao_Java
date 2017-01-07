@@ -43,6 +43,7 @@ public class Biblioteca {
 	public void RemoverLivro(String xcod) {
 		for(int i=0; i<qtd; i++){
 			//fazer o remover
+			
 		}
 
 	}

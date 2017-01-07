@@ -41,9 +41,28 @@ public class Biblioteca {
 	}
 
 	public void RemoverLivro(String xcod) {
-		for(int i=0; i<qtd; i++){
-			//fazer o remover
+		int i=0;
+		for (Livros nlivro: livro){
+			if(xcod.equals(nlivro.getCodigo())){
+				for(int j=i;j<qtdlivro; j++){
+					if(livro[j] == null){
+						break;
+					}
+					else{
+						livro[j] = livro[j+1];
+					}
+				}
+				
+				livro[qtdlivro] = null;
+				qtdlivro -= 1;
+				System.out.println("Livro removido com sucesso \n");
+				break;
+			}
 			
+			if(nlivro == null)
+				break;
+			
+			i++;
 		}
 
 	}

@@ -10,10 +10,10 @@ public class ExecutavelFinal {
 		Veterinario  veterinario = new Veterinario();
 		
 		
-		veterinario.examinar(humano);
+		//veterinario.examinar(humano);
 		veterinario.examinar(baleia);
 		veterinario.examinar(jacare);
-		veterinario.examinar(veterinario);
+		//veterinario.examinar(veterinario);
 
 	}
 }

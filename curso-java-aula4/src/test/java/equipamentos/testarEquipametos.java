@@ -1,7 +1,8 @@
 package equipamentos;
 
-import junit.framework.Assert;
 
+
+import org.junit.Assert;
 import org.junit.Test;
 
 public class testarEquipametos {
@@ -17,7 +18,7 @@ public class testarEquipametos {
 	public void TestarTelevisao(){
 		double preco = 200;
 		Televisao televisao  = new Televisao(preco,"Samsung",10);
-		Assert.assertEquals(Double.valueOf(preco),Double.valueOf(televisao.calcularPrecoFinal()));
+		Assert.assertEquals(Double.valueOf(preco),Double.valueOf(televisao.calcularPrecoFinal(2)));
 	}
 	
 	@Test

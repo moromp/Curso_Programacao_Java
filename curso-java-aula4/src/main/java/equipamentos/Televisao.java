@@ -15,6 +15,4 @@ public class Televisao extends Equipamento{
 	public void setPolegadas(int polegadas) {
 		this.polegadas = polegadas;
 	}
-
-	
 }

@@ -4,4 +4,13 @@
   <artifactId>curso-java-aula5</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>aula5</name>
+  
+  <dependencies>
+		<!-- Colocando a dependencia do JUNIT no projeto -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+	</dependencies>
 </project>

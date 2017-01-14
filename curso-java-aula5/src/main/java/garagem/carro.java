@@ -1,6 +1,6 @@
 package garagem;
 
-public class carro {
+public class carro implements Comparable<carro>{
 
 	private String marca;
 	private String placa;
@@ -67,6 +67,10 @@ public class carro {
 	@Override
 	public String toString() {
 		return "Placa: " + placa +" Marca: " + marca + " Ano: " + ano + " Preco: R$" + preco;
+	}
+
+	public int compareTo(carro outroCarro) {
+		return placa.compareTo(outroCarro.placa);
 	}
 	
 }

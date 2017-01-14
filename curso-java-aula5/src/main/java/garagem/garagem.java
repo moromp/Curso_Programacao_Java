@@ -1,9 +1,10 @@
 package garagem;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.Map.Entry;
 
 
 public class garagem {
@@ -28,11 +29,12 @@ public class garagem {
 	}
 	
 	public void Listar(){
-		Set<Entry<String, carro>> entrySet = novocarro.entrySet();
+		List<carro> carros = new ArrayList<carro>(novocarro.values());
+		Collections.sort(carros);
+		
 		System.out.println("\n");
-		for (Entry<String, carro> entry : entrySet) {
-			System.out.println(entry.getKey() + " - " + 
-					entry.getValue());//pra funcionar o println tenho q substituir o metodo toString na classe carro
+		for (carro carro : carros) {
+			System.out.println(carro);//pra funcionar o println tenho q substituir o metodo toString na classe carro
 		}
 		System.out.println("\n");
 	}

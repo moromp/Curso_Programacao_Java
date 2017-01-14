@@ -15,7 +15,7 @@ public class TestarUsuarioExercicio {
 			gerenciador.verificar(usuario);
 			System.out.println("ok");
 		} catch (UsuarioInvalidException e) {
-			System.out.println(e);
+			e.printStackTrace();//para mostrar o trace do erro
 		}
 		
 		try {

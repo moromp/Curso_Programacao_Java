@@ -1,7 +1,19 @@
 package garagem;
 
+/**
+ * Classe que armazena uns carros
+ * 
+ * @author Mateus Moro
+ *
+ */
+
 public class carro implements Comparable<carro>{
 
+	/**
+	 * classe de carro
+	 */
+	
+	
 	private String marca;
 	private String placa;
 	private int ano;

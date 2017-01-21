@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class menuInicial {
 
 	public static int mostrarMenu(Scanner scanner) {
+		
 		System.out.println("1. Cadastrar");
 		System.out.println("2. Vender");
 		System.out.println("3. Buscar");

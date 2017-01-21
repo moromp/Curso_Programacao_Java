@@ -10,6 +10,11 @@ import java.util.Map;
 public class garagem {
 	Map<String, carro> novocarro = new HashMap<String, carro>();
 	
+	/**
+	 * 
+	 * @param carro - Carro a ser adicionado
+	 */
+	
 	public void Adicionar(carro carro){
 		
 		boolean containsKey = novocarro.containsKey(carro.getPlaca());

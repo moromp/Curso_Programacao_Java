@@ -6,9 +6,9 @@
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/cafe"/>
-            <property name="javax.persistence.jdbc.user" value="cafe"/>
-            <property name="javax.persistence.jdbc.password" value="cafe"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/java03"/>
+            <property name="javax.persistence.jdbc.user" value="java03"/>
+            <property name="javax.persistence.jdbc.password" value="java03"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.show_sql" value="true"/>
         </properties>
